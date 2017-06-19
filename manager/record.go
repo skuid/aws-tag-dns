@@ -18,7 +18,7 @@ type Config struct {
 	Region          string
 	RecordType      string
 	UsePrivateIP    bool
-	Debug           bool
+	DryRun          bool
 	TTL             int64
 	ASGTags         spec.SelectorSet
 }

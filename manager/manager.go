@@ -213,7 +213,7 @@ func (m Manager) AssignRoutes() error {
 		"The following routes will be assigned",
 		fields...,
 	)
-	if m.config.Debug {
+	if m.config.DryRun {
 		return nil
 	}
 	err = m.assignRoutes(updates)

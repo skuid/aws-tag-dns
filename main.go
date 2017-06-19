@@ -38,7 +38,7 @@ func main() {
 	flag.StringVar(&config.RecordType, "record", "A", "The record type to use. Must be \"A\" or \"CNAME\"")
 	flag.BoolVar(&config.UsePrivateIP, "private", true, "Use the instance's private IP or DNS")
 	flag.Int64Var(&config.TTL, "ttl", 60, "The TTL to set")
-	flag.BoolVar(&config.Debug, "debug", false, "Don't actually update records")
+	flag.BoolVar(&config.DryRun, "dry-run", false, "Don't actually update records")
 
 	var period = flag.DurationP("period", "p", time.Duration(time.Minute), "The interval for the update to run")
 

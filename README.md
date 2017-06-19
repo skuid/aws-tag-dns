@@ -23,7 +23,7 @@ aws-tag-dns --prefix etcd --private --record A --tags Name=MyEtcdAsg --zone Z2SN
 
 ```
 Usage of aws-tag-dns:
-  --debug
+  --dry-run
     	Don't actually update records
   -p, --period duration
     	The interval for the update to run (default 1m0s)
