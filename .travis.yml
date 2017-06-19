@@ -1,6 +1,9 @@
 sudo: false
 language: go
 
+env:
+  - GO_PKGS=$(go list ./... | grep -v vendor)
+
 go:
   - 1.8
   - tip
@@ -9,5 +12,4 @@ before_install:
   - go get golang.org/x/tools/cmd/cover
 
 script:
-  - go test -coverprofile=coverage.out
-  - go tool cover -func=coverage.out
+  - go test -cover $GO_PKGS
