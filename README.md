@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/skuid/aws-tag-dns.svg)](https://travis-ci.org/skuid/aws-tag-dns)
 [![https://img.shields.io/badge/godoc-reference-5272B4.svg?style=flat-square](https://img.shields.io/badge/godoc-reference-5272B4.svg?style=flat-square)](http://godoc.org/github.com/skuid/aws-tag-dns/)
+[![aws-tag-dns](https://quay.io/repository/skuid/aws-tag-dns/status "aws-tag-dns")](https://quay.io/repository/skuid/aws-tag-dns)
 
 # aws-tag-dns
 
@@ -14,8 +15,9 @@ aws-tag-dns --prefix etcd --private --record A --tags Name=MyEtcdAsg --zone Z2SN
   "timestamp": "2017-06-19T13:37:40.827-0400",
   "caller": "manager/manager.go:216",
   "message": "The following routes will be assigned",
-  "etcd.skuid.com.": "172.20.67.72",
-  "etcd.skuid.com.": "172.20.88.113"
+  "etcd0.skuid.com.": "172.20.67.72",
+  "etcd1.skuid.com.": "172.20.88.113"
+  "etcd2.skuid.com.": "172.20.112.3"
 }
 ```
 
@@ -48,7 +50,7 @@ Usage of aws-tag-dns:
 
 ### Dependencies
 
-Use [`dep`](https://github.com/golang/dep). 
+Use [`dep`](https://github.com/golang/dep).
 
 ```bash
 dep status
