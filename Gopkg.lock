@@ -1,0 +1,43 @@
+memo = "7550538b239ca985c5991b8cd8dc124b05505e2ceaf9d1f8dc324deec49ed30d"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/aws/aws-sdk-go"
+  packages = ["aws","aws/awserr","aws/awsutil","aws/client","aws/client/metadata","aws/corehandlers","aws/credentials","aws/credentials/ec2rolecreds","aws/credentials/endpointcreds","aws/credentials/stscreds","aws/defaults","aws/ec2metadata","aws/endpoints","aws/request","aws/session","aws/signer/v4","private/protocol","private/protocol/ec2query","private/protocol/query","private/protocol/query/queryutil","private/protocol/rest","private/protocol/restxml","private/protocol/xml/xmlutil","private/waiter","service/ec2","service/route53","service/sts"]
+  revision = "8e3cbe8bc6116511806e5627b0dbc03d5b79ce0a"
+
+[[projects]]
+  name = "github.com/go-ini/ini"
+  packages = ["."]
+  revision = "d3de07a94d22b4a0972deb4b96d790c2c0ce8333"
+  version = "v1.28.0"
+
+[[projects]]
+  name = "github.com/jmespath/go-jmespath"
+  packages = ["."]
+  revision = "3433f3ea46d9f8019119e7dd41274e112a2359a9"
+  version = "0.2.2"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/ogier/pflag"
+  packages = ["."]
+  revision = "45c278ab3607870051a2ea9040bb85fcb8557481"
+
+[[projects]]
+  branch = "READING"
+  name = "github.com/skuid/spec"
+  packages = ["."]
+  revision = "69f1f04233ea5640c51b61321d0cfccaad1e40ea"
+
+[[projects]]
+  branch = "master"
+  name = "go.uber.org/atomic"
+  packages = ["."]
+  revision = "3b8db5e93c4c02efbc313e17b2e796b0914a01fb"
+
+[[projects]]
+  branch = "master"
+  name = "go.uber.org/zap"
+  packages = [".","buffer","internal/bufferpool","internal/color","internal/exit","internal/multierror","zapcore"]
+  revision = "4257c7cf05477d92ec25c31cfd3d60e89575f18a"

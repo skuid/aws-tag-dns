@@ -1,0 +1,16 @@
+
+[[dependencies]]
+  branch = "master"
+  name = "github.com/aws/aws-sdk-go"
+
+[[dependencies]]
+  branch = "master"
+  name = "github.com/ogier/pflag"
+
+[[dependencies]]
+  branch = "READING"
+  name = "github.com/skuid/spec"
+
+[[dependencies]]
+  branch = "master"
+  name = "go.uber.org/zap"
