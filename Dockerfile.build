@@ -1,0 +1,9 @@
+FROM golang:1.8-alpine
+
+WORKDIR /go/src/github.com/skuid/aws-tag-dns
+
+ADD . .
+
+RUN GOOS=linux go build -i
+
+CMD ["date"]
