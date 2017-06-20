@@ -46,6 +46,47 @@ Usage of aws-tag-dns:
 
 ```
 
+## AWS Permissions Required
+
+Below is an example IAM policy that outlines the permissions needed for this
+application. You may optionally further restrict the `ec2:DescribeInstances`
+call by specifying the region in the `Resource` section.
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DescribeInstances"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "route53:ChangeResourceRecordSets",
+                "route53:GetHostedZone"
+            ],
+            "Resource": [
+                "arn:aws:route53:::hostedzone/<HostedZoneID>"
+            ]
+        {
+            "Effect": "Allow",
+            "Action": [
+                "route53:ListResourceRecordSets"
+            ],
+            "Resource": [
+                "*"
+            ]
+        }
+    ]
+}
+```
+
 ## Developing
 
 ### Dependencies
