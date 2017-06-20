@@ -10,3 +10,4 @@ before_install:
 
 script:
 - go test -cover ./manager
+- go build
