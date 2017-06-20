@@ -74,6 +74,7 @@ call by specifying the region in the `Resource` section.
             "Resource": [
                 "arn:aws:route53:::hostedzone/<HostedZoneID>"
             ]
+        },
         {
             "Effect": "Allow",
             "Action": [
